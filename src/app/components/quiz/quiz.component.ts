@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import quizz_questions from "../../../assets/data/quizz_questions.json"
+import quiz_questions from "../../../assets/data/quizz_questions.json"
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './quiz.component.css'
 })
 
-export class QuizzComponent implements OnInit {
+export class QuizComponent implements OnInit {
 
   title:string = ""
 
@@ -27,11 +27,11 @@ export class QuizzComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    if(quizz_questions){
+    if(quiz_questions){
       this.finished = false
-      this.title = quizz_questions.title
+      this.title = quiz_questions.title
 
-      this.questions = quizz_questions.questions
+      this.questions = quiz_questions.questions
       this.questionSelected = this.questions[this.questionIndex]
 
       this.questionIndex = 0
@@ -57,7 +57,7 @@ export class QuizzComponent implements OnInit {
     }else{
       const finalAnswer:string = await this.checkResult(this.answers)
       this.finished = true
-      this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results ]
+      this.answerSelected = quiz_questions.results[finalAnswer as keyof typeof quiz_questions.results ]
     }
   }
 
