@@ -23,6 +23,7 @@ export class QuizComponent implements OnInit {
   questionMaxIndex:number=0
 
   finished:boolean = false
+  logoPath: String = "assets/imgs/logo.png"
 
   constructor() { }
 
