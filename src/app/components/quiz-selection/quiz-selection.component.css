@@ -1,0 +1,23 @@
+.quiz-selection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.container__quiz-button {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.container__quiz-img img {
+    width: 100%;
+    height: auto;
+}
+
+.container__quiz-title h1 {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
