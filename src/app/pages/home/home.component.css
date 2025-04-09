@@ -21,8 +21,9 @@ img {
 
 .selection-container {
     margin: 20px;
+    padding: 20px;
     border-radius: 15px;
-    background-color: blueviolet;
+    background-color: rgb(135, 114, 155);
 }
 
 .testing {

@@ -1,56 +1,56 @@
 {
-    "imgPath": "https://img.quizur.com/f/img64ee2ebabd6417.71284574.jpg",
-    "title":"Você seria um heroi ou vilão ?",
-    "questions":[
-      {
-        "id":1,
-        "question": "Qual super poder você escolheria ?",
-        "options":[
-          {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-          {"id": 2, "name":"Voar", "alias":"B"},
-          {"id": 3, "name":"Explodir coisas", "alias":"A"},
-          {"id": 4, "name":"Curar feridas", "alias":"B"},
-          {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
-        ]
-      },
-      {
-        "id":2,
-        "question": "Quem você salvaria primeiro ?",
-        "options":[
-          {"id": 1, "name":"Crianças", "alias":"A"},
-          {"id": 2, "name":"Idosos", "alias":"A"},
-          {"id": 3, "name":"Não saberia escolher", "alias":"B"}
-        ]
-      },
-      {
-        "id":3,
-        "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
-        "options":[
-          {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-          {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-          {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-          {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
-        ]
-      },
-      {
-        "id":4,
-        "question": "Qual o seu maior foco ?",
-        "options":[
-          {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-          {"id": 2, "name":"Salvar a cidade", "alias":"B"}
-        ]
-      },
-      {
-        "id":5,
-        "question": "Qual o seu apelido de super ser ?",
-        "options":[
-          {"id": 1, "name":"O Terrivel", "alias":"A"},
-          {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
-        ]
-      }
-    ],
-    "results":{
-      "A": "Você muito provavelmente seria um super vilão!",
-      "B": "Você muito provavelmente seria um super Herói!"
+  "imgPath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt7Jrmp53mdfAwrVrwePA38UPl6cTuFxRo0A&s",
+  "title": "Descubra qual seria a sua cor favorita!",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual dessas combinações de cores você acha mais atraente?",
+      "options": [
+        {"id": 1, "name": "Vermelho e azul", "alias": "A", "color": "Vermelho"},
+        {"id": 2, "name": "Verde e amarelo", "alias": "B", "color": "Verde"},
+        {"id": 3, "name": "Azul e roxo", "alias": "C", "color": "Azul"}
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Qual dessas sensações você mais valoriza?",
+      "options": [
+        {"id": 1, "name": "Energia e paixão", "alias": "A", "color": "Vermelho"},
+        {"id": 2, "name": "Calma e equilíbrio", "alias": "B", "color": "Verde"},
+        {"id": 3, "name": "Criatividade e mistério", "alias": "C", "color": "Azul"}
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Em qual ambiente você se sente mais confortável?",
+      "options": [
+        {"id": 1, "name": "Uma sala iluminada com tons quentes", "alias": "A", "color": "Vermelho"},
+        {"id": 2, "name": "Um jardim tranquilo", "alias": "B", "color": "Verde"},
+        {"id": 3, "name": "Uma galeria de arte moderna", "alias": "C", "color": "Azul"}
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Qual dessas combinações você escolheria para decorar sua casa?",
+      "options": [
+        {"id": 1, "name": "Paredes vermelhas com detalhes azuis", "alias": "A", "color": "Vermelho"},
+        {"id": 2, "name": "Paredes verdes com móveis amarelos", "alias": "B", "color": "Verde"},
+        {"id": 3, "name": "Paredes azuis com acessórios roxos", "alias": "C", "color": "Azul"}
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Qual dessas palavras melhor descreve sua personalidade?",
+      "options": [
+        {"id": 1, "name": "Apaixonado", "alias": "A", "color": "Vermelho"},
+        {"id": 2, "name": "Equilibrado", "alias": "B", "color": "Verde"},
+        {"id": 3, "name": "Inovador", "alias": "C", "color": "Azul"}
+      ]
     }
+  ],
+  "results": {
+    "Vermelho": "Você é uma pessoa energética, apaixonada e cheia de vida. Sua cor favorita é o vermelho, simbolizando força e dinamismo.",
+    "Verde": "Você é equilibrado, calmo e aprecia a harmonia. Sua cor favorita é o verde, representando tranquilidade e crescimento.",
+    "Azul": "Você é criativo, introspectivo e valoriza a profundidade. Sua cor favorita é o azul, associada à serenidade e sabedoria."
   }
+}
