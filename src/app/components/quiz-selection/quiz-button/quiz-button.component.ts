@@ -10,7 +10,11 @@ export class QuizButtonComponent implements OnInit {
   constructor () {}
 
   ngOnInit(): void {
-    
+    // console.log(this.imgPath)
+  }
+
+  ngOnChange(): void {
+    // console.log(this.imgPath)
   }
   @Input()
   title: String = ""
