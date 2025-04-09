@@ -1,3 +1,8 @@
-<ul>
-    <div>{{title}}</div>
-</ul>
+<div class="quiz-selection">
+    <app-quiz-button
+      *ngFor="let quiz of quizzes"
+      title="quiz.title"
+      imgPath="quiz.imgPath">
+    </app-quiz-button>
+</div>
+  
