@@ -18,3 +18,13 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.selection-container {
+    margin: 20px;
+    border-radius: 15px;
+    background-color: blueviolet;
+}
+
+.testing {
+    display: none;
+}
