@@ -1,55 +1,95 @@
 {
-    "title":"Você seria um heroi ou vilão ?",
-    "questions":[
-      {
-        "id":1,
-        "question": "Qual super poder você escolheria ?",
-        "options":[
-          {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-          {"id": 2, "name":"Voar", "alias":"B"},
-          {"id": 3, "name":"Explodir coisas", "alias":"A"},
-          {"id": 4, "name":"Curar feridas", "alias":"B"},
-          {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
-        ]
-      },
-      {
-        "id":2,
-        "question": "Quem você salvaria primeiro ?",
-        "options":[
-          {"id": 1, "name":"Crianças", "alias":"A"},
-          {"id": 2, "name":"Idosos", "alias":"A"},
-          {"id": 3, "name":"Não saberia escolher", "alias":"B"}
-        ]
-      },
-      {
-        "id":3,
-        "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
-        "options":[
-          {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-          {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-          {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-          {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
-        ]
-      },
-      {
-        "id":4,
-        "question": "Qual o seu maior foco ?",
-        "options":[
-          {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-          {"id": 2, "name":"Salvar a cidade", "alias":"B"}
-        ]
-      },
-      {
-        "id":5,
-        "question": "Qual o seu apelido de super ser ?",
-        "options":[
-          {"id": 1, "name":"O Terrivel", "alias":"A"},
-          {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
-        ]
-      }
-    ],
-    "results":{
-      "A": "Você muito provavelmente seria um super vilão!",
-      "B": "Você muito provavelmente seria um super Herói!"
+  "title": "Qual é a sua classe em D&D?",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Você tem dificuldades em role-playing, especialmente em interações com NPCs?",
+      "options": [
+        {"id": 1, "name": "Sim", "alias": "A"},
+        {"id": 2, "name": "Não", "alias": "B"}
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Qual dessas armas você prefere?",
+      "options": [
+        {"id": 1, "name": "Cajado", "alias": "A"},
+        {"id": 2, "name": "Espada e Escudo", "alias": "B"},
+        {"id": 3, "name": "Machado", "alias": "C"},
+        {"id": 4, "name": "Arco e Flecha", "alias": "D"},
+        {"id": 5, "name": "Punhal", "alias": "E"},
+        {"id": 6, "name": "Maça e Escudo", "alias": "F"},
+        {"id": 7, "name": "Grimório", "alias": "G"},
+        {"id": 8, "name": "Mãos Limpas", "alias": "H"},
+        {"id": 9, "name": "Instrumentos Musicais", "alias": "I"}
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Qual tipo de dano você mais prefere?",
+      "options": [
+        {"id": 1, "name": "Perfurante", "alias": "A"},
+        {"id": 2, "name": "Cortante", "alias": "B"},
+        {"id": 3, "name": "Flamejante/Congelante", "alias": "C"},
+        {"id": 4, "name": "Sagrado", "alias": "D"},
+        {"id": 5, "name": "Ácido", "alias": "E"},
+        {"id": 6, "name": "Contundente", "alias": "F"},
+        {"id": 7, "name": "Envenenamento", "alias": "G"},
+        {"id": 8, "name": "Necrótico", "alias": "H"}
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Qual origem de magia você mais aprecia?",
+      "options": [
+        {"id": 1, "name": "Estudos e Esforço", "alias": "A"},
+        {"id": 2, "name": "Contrato com um Patrono", "alias": "B"},
+        {"id": 3, "name": "Magia está em minhas veias", "alias": "C"},
+        {"id": 4, "name": "Vem da fé em meu Deus", "alias": "D"},
+        {"id": 5, "name": "Vem do meu juramento", "alias": "E"},
+        {"id": 6, "name": "Vem da Natureza", "alias": "F"},
+        {"id": 7, "name": "Vem da minha arte", "alias": "G"},
+        {"id": 8, "name": "Não gosto de magia", "alias": "H"}
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Em combate, como você prefere atuar?",
+      "options": [
+        {"id": 1, "name": "Atacar de perto", "alias": "A"},
+        {"id": 2, "name": "Atacar de longe", "alias": "B"},
+        {"id": 3, "name": "Ser furtivo", "alias": "C"},
+        {"id": 4, "name": "Dar suporte", "alias": "D"}
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Você gostaria de ter um pet?",
+      "options": [
+        {"id": 1, "name": "Familiar Mágico", "alias": "A"},
+        {"id": 2, "name": "Animal", "alias": "B"},
+        {"id": 3, "name": "Não quero", "alias": "C"}
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Quais atributos você mais valoriza?",
+      "options": [
+        {"id": 1, "name": "Força", "alias": "A"},
+        {"id": 2, "name": "Destreza", "alias": "B"},
+        {"id": 3, "name": "Constituição", "alias": "C"},
+        {"id": 4, "name": "Carisma", "alias": "D"},
+        {"id": 5, "name": "Inteligência", "alias": "E"},
+        {"id": 6, "name": "Sabedoria", "alias": "F"}
+      ]
     }
+  ],
+  "results": {
+    "A": "Você provavelmente se encaixaria como um Guerreiro, Bárbaro ou Paladino.",
+    "B": "Você provavelmente se encaixaria como um Feiticeiro, Bruxo ou Mago.",
+    "C": "Você provavelmente se encaixaria como um Ranger ou Ladino.",
+    "D": "Você provavelmente se encaixaria como um Clérigo ou Druida.",
+    "E": "Você provavelmente se encaixaria como um Bardo.",
+    "F": "Você provavelmente se encaixaria como um Monge."
   }
+}
