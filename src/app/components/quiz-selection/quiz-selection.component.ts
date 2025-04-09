@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonLoaderService } from '../../services/json-loader.service';
-import { of } from 'rxjs';
+import { EMPTY, firstValueFrom, of } from 'rxjs';
 import { catchError, concatMap } from 'rxjs/operators';
+import { FileExistsService } from '../../services/file-exists.service';
 
 @Component({
   selector: 'app-quiz-selection',
@@ -10,18 +11,29 @@ import { catchError, concatMap } from 'rxjs/operators';
 })
 
 export class QuizSelectionComponent implements OnInit {
-  title: string = "";
+  title: string = '';
   numberOfQuizzes: number = 10;
+  private path: string = 'assets/data/quizz_';
 
-  constructor(private jsonLoader: JsonLoaderService) {}
+  constructor(
+    private jsonLoader: JsonLoaderService,
+    private fileExistsService: FileExistsService
+  ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.loadQuizzes();
+  }
+
+  private async loadQuizzes(): Promise<void> {
     for (let i = 1; i <= this.numberOfQuizzes; i++) {
-      const file = `/assets/data/quizz_${i}.json`;
-
+      const file = `${this.path}${i}.json`;
+      const exists = await this.checkFileExists(file);
+      if (!exists) {
+        return;
+      }
       this.jsonLoader.loadJsonFile(file).subscribe({
         next: (data) => {
-          if (data && data.title) {
+          if (data?.title) {
             this.title += `${data.title} `;
           }
         },
@@ -31,5 +43,13 @@ export class QuizSelectionComponent implements OnInit {
       });
     }
   }
-}
 
+  async checkFileExists(pathFile: string): Promise<boolean> {
+    try {
+      return await firstValueFrom(this.fileExistsService.fileExistsService(pathFile));
+    } catch (error) {
+      console.error('Erro ao verificar o arquivo:', error);
+      return false;
+    }
+  }
+}
