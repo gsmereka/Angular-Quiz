@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonLoaderService } from '../../services/json-loader.service';
-import { EMPTY, firstValueFrom, of } from 'rxjs';
-import { catchError, concatMap } from 'rxjs/operators';
+import { firstValueFrom } from 'rxjs';
 import { FileExistsService } from '../../services/file-exists.service';
 
 @Component({
