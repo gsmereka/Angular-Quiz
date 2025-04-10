@@ -38,8 +38,8 @@ export class QuizComponent implements OnInit {
       this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
 
-      console.log(this.questionIndex)
-      console.log(this.questionMaxIndex)
+      // console.log(this.questionIndex)
+      // console.log(this.questionMaxIndex)
     }
 
   }
