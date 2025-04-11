@@ -23,12 +23,12 @@ export class QuizComponent implements OnInit {
   questionMaxIndex: number = 0;
 
   finished: boolean = false;
-  logoPath: string = 'assets/imgs/logo.png';
   quizData: any;
 
   constructor(private jsonLoaderService: JsonLoaderService) {}
 
   ngOnInit(): void {
+    this.fileUrl = 'assets/data/quizz_' + this.quiz_id + '.json';
     this.jsonLoaderService.loadJsonFile(this.fileUrl).subscribe(
       (data) => {
         if (data) {
