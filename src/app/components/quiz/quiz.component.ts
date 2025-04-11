@@ -42,9 +42,6 @@ export class QuizComponent implements OnInit {
           this.questionIndex = 0;
           this.questionMaxIndex = this.questions.length;
         }
-      },
-      (error) => {
-        console.error('Erro ao carregar o arquivo JSON', error);
       }
     );
   }
@@ -54,28 +51,31 @@ export class QuizComponent implements OnInit {
     this.nextStep();
   }
 
-  nextStep() {
+  async nextStep() {
     this.questionIndex += 1;
 
     if (this.questionMaxIndex > this.questionIndex) {
       this.questionSelected = this.questions[this.questionIndex];
     } else {
-      this.checkResult(this.answers).then(finalAnswer => {
-        this.finished = true;
-        this.answerSelected = this.quizData.results[finalAnswer as keyof typeof this.quizData.results];
-      });
+      const finalAnswer:string = await this.checkResult(this.answers)
+      this.finished = true
+      this.answerSelected = this.quizData.results[finalAnswer as keyof typeof this.quizData.results ]
     }
   }
 
-  async checkResult(answers: string[]) {
-    const result = answers.reduce((previous, current, i, arr) => {
-      if (arr.filter(item => item === previous).length > arr.filter(item => item === current).length) {
-        return previous;
-      } else {
-        return current;
-      }
-    });
+  async checkResult(anwsers:string[]){
 
-    return result;
+    const result = anwsers.reduce((previous, current, i, arr)=>{
+        if(
+          arr.filter(item => item === previous).length >
+          arr.filter(item => item === current).length
+        ){
+          return previous
+        }else{
+          return current
+        }
+    })
+
+    return result
   }
 }
