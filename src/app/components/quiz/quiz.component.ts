@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import quiz_questions from "../../../assets/data/quizz_questions.json"
 import { CommonModule } from '@angular/common';
 
@@ -10,7 +10,8 @@ import { CommonModule } from '@angular/common';
 })
 
 export class QuizComponent implements OnInit {
-
+  @Input()
+  quiz_id: String = ""
   title:string = ""
 
   questions:any
