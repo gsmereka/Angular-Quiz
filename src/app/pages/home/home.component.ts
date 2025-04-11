@@ -4,7 +4,7 @@ import { QuizSelectionComponent } from "../../components/quiz-selection/quiz-sel
 
 @Component({
   selector: 'app-home',
-  imports: [QuizComponent, QuizSelectionComponent],
+  imports: [QuizSelectionComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
