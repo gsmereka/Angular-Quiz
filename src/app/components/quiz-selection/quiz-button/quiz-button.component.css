@@ -19,7 +19,7 @@
 
 .container__quiz-img img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
@@ -62,7 +62,9 @@
     }
 
     .container__quiz-img {
-        height: 120px;
+        /* height: 120px; */
+        width: 100%;
+        object-fit: cover;
     }
 
     .container__quiz-title h1 {

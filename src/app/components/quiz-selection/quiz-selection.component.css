@@ -26,3 +26,28 @@
     padding: 20px;
     font-size: 24px;
 }
+
+/* Versão mobile */
+@media (max-width: 768px) {
+    .quiz-selection {
+        grid-template-columns: 1fr;
+        /* gap: 15px; */
+    }
+
+    .container__quiz-title h1 {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .title {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .container__quiz-img img {
+        /* max-height: 200px; */
+        width: 100%;
+        height: auto;
+        /* object-fit: cover; */
+    }
+}
