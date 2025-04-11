@@ -2,6 +2,12 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
 
+## Try it now!
+
+Curious to find out something fun about yourself?  
+Take one of the quizzes here: [Play the Quiz](https://gsmereka.github.io/Angular-Quiz/)
+
+
 ## Development server
 
 To start a local development server, run:
