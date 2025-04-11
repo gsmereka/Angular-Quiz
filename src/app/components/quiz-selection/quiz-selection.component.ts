@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 
 export class QuizSelectionComponent implements OnInit {
-  quizzes: { title: string; imgPath: string }[] = [];
+  quizzes: { title: string; imgPath: string; id: String}[] = [];
   numberOfQuizzes: number = 100;
   private path: string = 'assets/data/quizz_';
 
@@ -35,7 +35,7 @@ export class QuizSelectionComponent implements OnInit {
       }
       this.jsonLoader.loadJsonFile(file).subscribe({
         next: (data) => {
-            this.quizzes.push({ title: data.title, imgPath: data.imgPath });
+            this.quizzes.push({ title: data.title, imgPath: data.imgPath, id: i.toString() });
         },
         error: (err) => {}
       });

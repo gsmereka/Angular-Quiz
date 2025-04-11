@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { QuizComponent } from '../../components/quiz/quiz.component';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-quiz-page',
@@ -8,6 +8,17 @@ import { RouterModule } from '@angular/router';
   templateUrl: './quiz-page.component.html',
   styleUrl: './quiz-page.component.css'
 })
-export class QuizPageComponent {
+export class QuizPageComponent implements OnInit{
 
+  quizid: String = ""
+
+    constructor (private activeRoute: ActivatedRoute){
+
+    }
+    
+    ngOnInit(): void {
+      this.activeRoute.params.subscribe(
+        res => this.quizid = res['quiz_id']
+      )
+    }
 }

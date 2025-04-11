@@ -19,6 +19,9 @@ export class QuizButtonComponent implements OnInit {
   }
 
   @Input()
+  quiz_id: String = ""
+
+  @Input()
   title: String = ""
 
   @Input()
